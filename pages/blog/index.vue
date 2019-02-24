@@ -1,13 +1,13 @@
 <template>
     <div> 
-        All Blog Posts.
+        All Blog Posts
         <ul>
             <li 
                 v-for="(post, index) in allPosts" 
                 :key="index"
             >
                 <h2>
-                    <nuxt-link :to="`/blog/$post.slug]`">
+                    <nuxt-link :to="`/blog/${post.slug}`">
                         {{ post.title }}
                     </nuxt-link>
                 </h2>
