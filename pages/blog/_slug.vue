@@ -21,7 +21,12 @@ export default {
             }`,
             prefetch({route}) {
                 return {
-                    slug: route.params.slug,
+                    slug: route.params.slug
+                }
+            },
+            variables() {
+                return {
+                    slug: this.$route.params.slug,
                 }
             },
         }

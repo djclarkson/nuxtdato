@@ -27,10 +27,7 @@ module.exports = {
 
   apollo: {
     clientConfigs: {
-      default: {
-        httpEndpoint: 'https://graphql.datocms.com',
-        getAuth: () => 'Bearer 7186f4d2490068e91aaed0c381c091'
-      },
+      default: '~/plugins/nuxt.auth.js'
     }
   },
 
